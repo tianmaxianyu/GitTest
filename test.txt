@@ -1,0 +1,40 @@
+git add *.c(添加以.c结尾的文件)
+git config --list(显示当前的git配置信息)
+git config --global user.name ""
+git config --global user.email ""
+git diff -cached [file](显示缓存区和上一次提交的差异)
+git reset HEAD^(回退所有内容到上一个版本)
+git reset --hard HEAD(参数撤销工作区中所有未提交的修改内容，将暂存区与工作区都回到上一次版本，并删除之前的所有信息提交)
+git rm <file>( 将文件从暂存区和工作去删除)
+git rm -f <file>(如果删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 -f)
+git rm --cached <file>（从暂存区移除该文件）
+git branch <branchname>(创建分支名字)
+git checkout <branchname>（切换分支）
+git checkout -b <branchname>(创建新分支并切换到该分支下)
+git branch -d <branchname>(删除该分支)
+git merge <branchname>(合并分支)
+git mv <file><newfilename>(文件重命名)
+git log --oneline(查看历史记录的简洁版)
+git log --reverse(逆向显示日志)
+git log --author(查找某个用户提交的日志)例：git log --author = tom --online
+git blame <filename>（以列表形式显示特定文件的修改记录）
+git remote -v(显示所有远程仓库)
+git remote show [remote(即github地址)]（显示某个远程仓库的信息）
+git remote add [shortname(本地的仓库版本)][url]
+git remote rm name(删除远程仓库)
+获取远程服务器更新的数据：
+第一种写法：
+git fetch [alias]
+git merge [alias]/[branch]
+第二种写法:
+git pull <远程主机名><远程分支名>:<本地分支名>
+里：git pull origin master
+本地分支版本上传到远程：
+git push <远程主机名> <本地分支名>:<远程分支名>
+如果本地分支名与远程分支名相同：
+git push <远程主机名> <本地分支名>
+如果本地版本与远程版本有差异：
+git push --force origin master
+
+git tag -a <版本号>
+例：git tag -a v1.0

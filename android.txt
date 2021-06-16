@@ -1,0 +1,6 @@
+获取string文字：getResources().getText(R.string.name)
+gravity:控制元素在该控件里的显示位置；layout_gravity:控件在父控件中的位置
+margin:设置组件与父容器的边距,padding:设置组件内部元素间的边距
+Android的六大布局:
+LinearLayout(线性布局),RelativeLayout(相对布局),TableLayout(表格布局),FrameLayout(帧布局),AbsoluteLayout(相对布局),GridLayout(网格布局)
+SetLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.WRAP_CONTENT,1));
